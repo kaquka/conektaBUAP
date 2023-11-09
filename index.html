@@ -1,16 +1,241 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/assets/img/icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfil Polyworks</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConektaBUAPP</title>
+    <link rel="shortcut icon" href="./images/cb.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Conekta a tu universidad.">
+    <meta name="description"
+        content="Hola, soy una descripción que verás cuando busques algo de mi temática en Google.">
+
+
+    <meta property="og:type" content="website">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="./images/cb.png" >
+                <h2 class="nav__title">ConektaBUAPP.</h2>
+                
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+
+                <img src="./images/close.jpg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Conecta a tu universidad.</h1>
+            <p class="hero__paragraph">Infórmate de los eventos en tu universidad, mantente informado, asiste y conecta con tu campus.</p>
+
+            <div id="first" class="buttonBox" onclick="scrollToSection()">
+                <button >Conoce ConektaBUAP.</button>
+                <div class="border"></div>
+                <div class="border"></div>
+            </div>
+        </section>
+
+        
+    </header>
+
+    <main>
+        <script>
+            // Función para hacer scroll hacia la sección destino
+            function scrollToSection() {
+                // Seleccionar la sección destino
+                var seccionDestino = document.getElementById("aqui");
+    
+                // Hacer scroll suave hacia la sección destino
+                seccionDestino.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+        
+        <section class="container about" id="aqui">
+            <h2 class="subtitle">Misión.</h2>
+            <p class="about__paragraph">Crear un espacio para informar a los estudiantes acerca de las actividades recreacionales que se encuentren dentro de la institución, así como conocer gente con gustos similares, para poder forjar relaciones interpersonales.</p>
+            <br><br><br>
+            <h2 class="subtitle">Visión.</h2>
+            <p class="about__paragraph">Ser una aplicación que ayude a los estudiantes, especialmente a los de nuevo ingreso a conocer su escuela, y todas las ofertas, tanto educativas como de esparcimiento que ésta ofrece. Tanto del campus universitario, como los bachilleratos de la institución.</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/evento.jpg" class="about__icon">
+                    <h3 class="about__title">Eventos</h3>
+                    <p class="about__paragrah">Encuentra los sucesos más recientes que se celebrarán en las facultades de CU</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/amigos.jpg" class="about__icon">
+                    <h3 class="about__title">Amigos</h3>
+                    <p class="about__paragrah">Conoce a tus nuevos mejores amigos, con lo que convivirás en tu vida universitaria</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/invita.jpg" class="about__icon">
+                    <h3 class="about__title">Invita</h3>
+                    <p class="about__paragrah">Publicita tu evento para que más personas asistan</p>
+                </article>
+
+                
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">¡Interfaz amigable y fácil de usar!</h2>
+                    <p class="knowledge__paragraph">Claramente queremos que te dé gusto utilizar la app que te conecta con tu universidad, por ello hicimos 
+                        las interfaces lo más intuitivas posibles.
+                    </p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./images/macbook.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Luis Angel, <span class="testimony__course">estudiante
+                                de la BUAP.</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
+                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Sebastian, <span class="testimony__course">estudiante de
+                                la BUAP.</span></h2>
+                        <p class="testimony__review">Cuando empecé a estudiar en la BUAP, me costaba moverme por el campus
+                            y hacer amigos, me hubiera gustado que existiera una aplicación para apoyarme a hacer amigos y 
+                            descubrir cosas que hacer en la escuela.
+                        </p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Miguel Angel, <span class="testimony__course">estudiante de
+                                la BUAP.</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Luis Esteban, <span class="testimony__course">estudiante de
+                                BUAP.</span></h2>
+                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face4.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estas listo para aprender CSS?</h2>
+                <p class="questions__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+                    architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit
+                    eius atque tempora iure ab non autem.</p>
+                <a href="#" class="cta">Descarga ahora</a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Conekta BUAP</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; ConektaBuapp</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
